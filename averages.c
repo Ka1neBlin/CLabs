@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define N 5
 #define M 6
@@ -8,6 +9,7 @@
 // двумерной матрицы размером NxM
 
 int main(){
+  srand(time(NULL));
   int matrix_a[N][M]; // Матрица A
 
   printf("Выводим матрицу:\n");
@@ -33,6 +35,6 @@ int main(){
     float average = (float)averages[i] / N;
     printf("%4.3f ", average);
   }
-
+  printf("\n");
   return 0;
 }

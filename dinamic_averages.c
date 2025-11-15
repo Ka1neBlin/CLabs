@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(int argc, char *argv[])
 {
   // TODO: Подсчитать среднее арифметическое каждого столбца
   // матрицы размером NxM, заданным пользователем
+  srand(time(NULL));
   int n, m;
   printf("Введите количество строк: ");
   scanf("%d", &n); // Задаём количество строк

@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #define SIZE 10
 
 int main(){
   /* TODO: Определить минимум в первой
    * половине массива и максимум во второй
    * */
+  srand(time(NULL));
   int massive[SIZE]; // Массив
   for (int i = 0; i < SIZE; i++) {
     massive[i] = rand() % 100; // Заполняем массив случайными числами
